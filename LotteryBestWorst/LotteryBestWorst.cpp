@@ -15,6 +15,7 @@ std::vector<int> solution(std::vector<int> lottos, std::vector<int> win_nums){
 	return std::vector<int>{std::min(6, static_cast<int>(1 + ls.size() - ls.count(0))), std::min(6, static_cast<int>(1 + ls.size()))};
 }
 
+// Note: Everything below this line is for testing without using the site.
 int main(){
 	std::vector<std::vector<std::vector<int>>> problems{{{44, 1, 0, 0, 31, 25}, {31, 10, 45, 1, 6, 19}},
 		{{0, 0, 0, 0, 0, 0}, {38, 19, 20, 40, 15, 25}},
