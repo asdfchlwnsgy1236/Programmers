@@ -9,6 +9,7 @@
 #include <vector>
 
 std::string solution(std::string new_id){
+	// Add valid characters forced to lowercase, but skip if the period comes first or there would be consecutive periods.
 	std::string answer;
 	char period = '.';
 	for(int a = 0; a < new_id.size() && answer.size() < 15; ++a){
@@ -19,6 +20,8 @@ std::string solution(std::string new_id){
 			answer.append(1, std::tolower(new_id[a]));
 		}
 	}
+
+	// Handle the cases where the period is at the end, the ID is empty, and the ID's length is too short.
 	if(answer.size() && answer.back() == period){
 		answer.pop_back();
 	}

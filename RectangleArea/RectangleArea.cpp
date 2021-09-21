@@ -28,16 +28,19 @@ struct CompareY{
 };
 
 long long solution(std::vector<vecint> rectangles){
+	// Gather all points to visit on the x axis.
 	std::map<int, std::set<vecint const *, CompareX>> xs;
 	for(auto const &rect : rectangles){
 		xs[rect[0]].insert(&rect);
 		xs[rect[2]].insert(&rect);
 	}
 
+	// Visit each point on the x axis gathered above.
 	std::set<vecint const *, CompareY> ys;
 	int oldx = -1;
 	long long answer = 0;
 	for(auto xit = xs.begin(); xit != xs.end(); ++xit){
+		// Calculate the total height of all rectangles containing within the current x interval, and add the area from it.
 		if(int width = xit->first - oldx; width && !ys.empty()){
 			int height = 0, y1 = -1, y2 = -1;
 			for(auto yit = ys.begin(); yit != ys.end(); ++yit){
@@ -55,6 +58,7 @@ long long solution(std::vector<vecint> rectangles){
 			answer += static_cast<long long>(width) * height;
 		}
 
+		// Add the rectangles that begin at the current point, and then remove the rectangles that end at the current point.
 		ys.insert(xit->second.begin(), xit->second.end());
 		oldx = xit->first;
 		for(auto yit = ys.begin(); yit != ys.end();){
