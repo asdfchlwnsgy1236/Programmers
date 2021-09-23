@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 #include <utility>
-// Note: The header below are for testing without using the site.
+// Note: The header below is for testing without using the site.
 #include <vector>
 
 std::string solution(std::string new_id){
