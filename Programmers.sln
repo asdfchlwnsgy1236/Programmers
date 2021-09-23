@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NewIDRecommendation", "NewI
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MixedStringToNumber", "MixedStringToNumber\MixedStringToNumber.vcxproj", "{B55F3724-1B2F-4EF8-9384-F8B8F786EB87}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringCompression", "StringCompression\StringCompression.vcxproj", "{80F93E57-A873-4728-85C9-F6E4F2F0B075}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{B55F3724-1B2F-4EF8-9384-F8B8F786EB87}.Release|x64.Build.0 = Release|x64
 		{B55F3724-1B2F-4EF8-9384-F8B8F786EB87}.Release|x86.ActiveCfg = Release|Win32
 		{B55F3724-1B2F-4EF8-9384-F8B8F786EB87}.Release|x86.Build.0 = Release|Win32
+		{80F93E57-A873-4728-85C9-F6E4F2F0B075}.Debug|x64.ActiveCfg = Debug|x64
+		{80F93E57-A873-4728-85C9-F6E4F2F0B075}.Debug|x64.Build.0 = Debug|x64
+		{80F93E57-A873-4728-85C9-F6E4F2F0B075}.Debug|x86.ActiveCfg = Debug|Win32
+		{80F93E57-A873-4728-85C9-F6E4F2F0B075}.Debug|x86.Build.0 = Debug|Win32
+		{80F93E57-A873-4728-85C9-F6E4F2F0B075}.Release|x64.ActiveCfg = Release|x64
+		{80F93E57-A873-4728-85C9-F6E4F2F0B075}.Release|x64.Build.0 = Release|x64
+		{80F93E57-A873-4728-85C9-F6E4F2F0B075}.Release|x86.ActiveCfg = Release|Win32
+		{80F93E57-A873-4728-85C9-F6E4F2F0B075}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
