@@ -1,9 +1,9 @@
 // URL: https://programmers.co.kr/learn/courses/30/lessons/77484
 
-#include <algorithm>
-#include <iostream>
 #include <set>
 #include <vector>
+// Note: The header below is for testing without using the site.
+#include <iostream>
 
 using vecint = std::vector<int>;
 

@@ -1,11 +1,9 @@
 // URL: https://programmers.co.kr/learn/courses/30/lessons/72410
 
-#include <cctype>
 #include <cstring>
-#include <iostream>
 #include <string>
-#include <utility>
-// Note: The header below is for testing without using the site.
+// Note: The headers below are for testing without using the site.
+#include <iostream>
 #include <vector>
 
 std::string solution(std::string new_id){
